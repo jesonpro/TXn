@@ -1,7 +1,7 @@
 /* Copyright (C) 2021 TENUX-Neotro.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-NEOTROX - TEENUHX
+NEOTROX - TEENUHX©️TEENU-X
 */
 
 const fs = require("fs");
@@ -541,7 +541,7 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
         if(msg.key.remoteJid.includes('-') ? nsup.includes(msg.key.remoteJid.split('@')[0]) : nsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
     }
 
-// ====================BLOCK-CHAT==================
+// ====================BLOCK-CHAT==================©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X©️TEENU-X
     
         events.commands.map(
             async (command) =>  {
