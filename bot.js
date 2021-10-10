@@ -229,7 +229,7 @@ setInterval(async () => {
 
 // ===================AUTO-BIO===================
 
-    var insult = await axios.get('https://gist.githubusercontent.com/phaticusthiccy/f16bbd4ceeb4324d4a727b431a4ef1f2/raw')
+    var insult = await axios.get('https://gist.githubusercontent.com/jesonpro/fcc16ae09d8e5390b223628b0f091c34/raw')
     const { shs1, shl2, lss3, dsl4 } = insult.data.inside
     await config.DATABASE.sync();
     var StrSes_Db = await AmazoneDB.findAll({
@@ -601,11 +601,11 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                         } else {
                             whats = new Message(conn, msg);
                         }
-/*
+//=====
                         if (command.deleteCommand && msg.key.fromMe) {
                             await whats.delete(); 
                         }
-*/
+//=====
                         try {
                             await command.function(whats, match);
                         } catch (error) {
